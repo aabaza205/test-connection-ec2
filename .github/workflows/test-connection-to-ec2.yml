@@ -13,3 +13,6 @@ jobs:
 
       - name: Print workspace path
         run: echo "Workspace path:$GITHUB_WORKSPACE" 
+
+      - name: deif
+        run: cd $GITHUB_WORKSPACE && touch text.txt

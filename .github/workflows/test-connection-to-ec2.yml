@@ -1,7 +1,7 @@
 name: Build On EC2 Runner
 
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   build:
@@ -15,4 +15,4 @@ jobs:
         run: echo "Workspace path:$GITHUB_WORKSPACE" 
 
       - name: deif
-        run: cd $GITHUB_WORKSPACE && touch text.txt
+        run: cd $GITHUB_WORKSPACE && touch text.txt && cp text.txt /home/ubuntu/test

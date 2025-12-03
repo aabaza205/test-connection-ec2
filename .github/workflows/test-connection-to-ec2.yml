@@ -12,7 +12,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Print workspace path
-        run: echo "Workspace path: $GITHUB_WORKSPACE"
-
-      - name: Build
-        run: echo "Running build on EC2 runner medai-migration"
+        run: echo "Workspace path:$GITHUB_WORKSPACE" 
